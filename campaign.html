@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="campaign.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+
+            <div class="top-head">
+                <img src="iium logo.png" alt="iium logo" class="logo" height="100">
+                <div class="text">
+                    <h1>RM1 Campaign</h1>
+                    <h2>Let your contributions be perpetual for the pleasure of Allah SWT</h2>
+                </div>
+            </div>
+
+            <div class="ayat">
+                <h5 id="baqarah">
+                    مَّثَلُ ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُمْ فِى سَبِيلِ ٱللَّهِ كَمَثَلِ حَبَّةٍ أَنۢبَتَتْ سَبْعَ
+                    سَنَابِلَ فِى كُلِّ سُنۢبُلَةٍۢ مِّا۟ئَةُ حَبَّةٍۢ ۗ وَٱللَّهُ يُضَـٰعِفُ لِمَن يَشَآءُ ۗ وَٱللَّهُ
+                    وَٰسِعٌ عَلِيمٌ
+                </h5>
+                <h5 id="translation">
+                    The example of those who spend their wealth in the cause of Allah is that of a grain that sprouts
+                    into seven ears,
+                    each bearing one hundred grains. And Allah multiplies ˹the reward even more˺ to whoever He wills.
+                    For Allah is All-Bountiful, All-Knowing. <br>(Surah Al-Baqarah ayat 261) </h5>
+            </div>
+
+            <nav>
+                <img src="sedekah.jpeg" alt="help needy people " class="needyImage">
+                <ul class="links">
+                    <a href='#deductionForm'>Monthly Salary Deduction Form</a><br>
+                    <br>
+                    <a href='#endowmentFund'>IIUM Endowment Fund </a>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section class="first">
+            <h2 id='deductionForm'> Monthly Salary Deduction Form </h2>
+            <fieldset>
+                <form id="myForm">
+                    <ul>
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" id="name" name="user_name" />
+
+                        <br>
+                        <br>
+
+                        <label for="staffNo">Staff No.</label>
+                        <span aria-label="required">*</span>
+                        <br>
+                        <input type="text" id="staffNo" name="staff_no" />
+
+                        <br>
+                        <br>
+
+                        <label for="kcdio">K/C/D/I/O</label>
+                        <span aria-label="required">*</span>
+                        <br>
+                        <input type="text" id="kcdio" name="user_kcdio" />
+
+                        <br>
+                        <br>
+
+                        <label for="contactNo">Contact No.</label>
+                        <span aria-label="required">*</span>
+                        <br>
+                        <input type="text" id="contactNo" name="user_contact" />
+
+                        <br>
+                        <br>
+
+                        <label for="email">Email</label>
+                        <span aria-label="required">*</span>
+                        <br>
+                        <input type="email" id="email" name="user_email" />
+
+                        <br>
+                        <br>
+
+                        <label for="amount">Amount to be Deducted
+                            <span aria-label="required">*</span><br><br> RM </label>
+                        <input type="amount" id="amount" name="user_amount" />
+
+                        <br>
+                        <br>
+
+                        <div class="deduction">
+                            <h5>
+                                The above salary deduction will take effect from
+
+                                <select id="month">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+
+                                <select id="year">
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                </select>
+
+                                until
+
+                                <select id="month">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+
+                                <select id="year">
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                </select>
+                                <br> or further notice
+                            </h5>
+                        </div>
+
+                        <br>
+
+                    </ul>
+
+
+                    <button type="submit" class="submit"><strong>Submit Details</strong></button>
+
+                    <script>
+                        document.getElementById('myForm').addEventListener('submit', function (event) {
+                            event.preventDefault();
+                            alert("Submission Successful!");
+                            this.reset();
+                        });
+                    </script>
+
+                </form>
+
+            </fieldset>
+
+        </section>
+
+        <footer>
+
+            <h4 id='endowmentFund'>IIUM Endowment Fund</h4>
+            <h5>Contact Information</h5>
+
+            <div class="address">
+                <section>
+                    IIUM Endowment Fund<br>
+                    Level 3, Rectory<br>
+                    International Islamic University Malaysia<br>
+                    P.O. Box 10<br>
+                    50728 Kuala Lumpur
+                </section>
+                <section class="contact">
+                    Tel: 03 6196 4268<br>
+                    Email: ief@iium.edu.my<br>
+                    Website: www.iium.edu.my/ief <br>
+                    Facebook : www.facebook.com/ief.official/
+                </section>
+            </div>
+
+        </footer>
+
+</body>
+
+</html>
