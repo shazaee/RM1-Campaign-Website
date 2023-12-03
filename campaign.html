@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RM 1 Campaign</title>
     <link rel="stylesheet" href="campaign.css">
+    <script src="campaign.js" defer></script>
+
 </head>
 
 <body>
@@ -35,7 +37,7 @@
             </div>
 
             <nav>
-                <img src="sedekah.jpeg" alt="help needy people " class="needyImage">
+                <img src="sedekah.jpeg" alt="help needy people" class="needyImage">
                 <ul class="links">
                     <a href='#deductionForm'>Monthly Salary Deduction Form</a><br>
                     <br>
@@ -51,8 +53,9 @@
                 <form id="myForm">
                     <ul>
                         <label for="name">Name</label>
+                        <span aria-label="required">*</span>
                         <br>
-                        <input type="text" id="name" name="user_name" />
+                        <input type="text" id="name" name="user_name" required>
 
                         <br>
                         <br>
@@ -60,15 +63,15 @@
                         <label for="staffNo">Staff No.</label>
                         <span aria-label="required">*</span>
                         <br>
-                        <input type="text" id="staffNo" name="staff_no" />
+                        <input type="text" id="staffNo" name="staff_no" required>
 
                         <br>
                         <br>
 
-                        <label for="kcdio">K/C/D/I/O</label>
+                        <label for="kcdio">Kulliyahs / Centres / Divisions / Institutes / Offices</label>
                         <span aria-label="required">*</span>
                         <br>
-                        <input type="text" id="kcdio" name="user_kcdio" />
+                        <input type="text" id="kcdio" name="user_kcdio" required>
 
                         <br>
                         <br>
@@ -76,7 +79,7 @@
                         <label for="contactNo">Contact No.</label>
                         <span aria-label="required">*</span>
                         <br>
-                        <input type="text" id="contactNo" name="user_contact" />
+                        <input type="text" id="contactNo" name="user_contact" required>
 
                         <br>
                         <br>
@@ -84,87 +87,30 @@
                         <label for="email">Email</label>
                         <span aria-label="required">*</span>
                         <br>
-                        <input type="email" id="email" name="user_email" />
+                        <input type="email" id="email" name="user_email" required>
 
                         <br>
                         <br>
 
                         <label for="amount">Amount to be Deducted
                             <span aria-label="required">*</span><br><br> RM </label>
-                        <input type="amount" id="amount" name="user_amount" />
+                        <input type="amount" id="amount" name="user_amount" required>
 
                         <br>
                         <br>
 
                         <div class="deduction">
-                            <h5>
-                                The above salary deduction will take effect from
+                            <label for="startDate">Effective Date:</label>
+                            <input type="date" id="start" name="startDate" required>
 
-                                <select id="month">
-                                    <option>January</option>
-                                    <option>February</option>
-                                    <option>March</option>
-                                    <option>April</option>
-                                    <option>May</option>
-                                    <option>June</option>
-                                    <option>July</option>
-                                    <option>August</option>
-                                    <option>September</option>
-                                    <option>October</option>
-                                    <option>November</option>
-                                    <option>December</option>
-                                </select>
+                            <label for="endDate">End Date:</label>
+                            <input type="date" id="end" name="endDate" required>
 
-                                <select id="year">
-                                    <option>2023</option>
-                                    <option>2024</option>
-                                    <option>2025</option>
-                                    <option>2026</option>
-                                    <option>2027</option>
-                                </select>
-
-                                until
-
-                                <select id="month">
-                                    <option>January</option>
-                                    <option>February</option>
-                                    <option>March</option>
-                                    <option>April</option>
-                                    <option>May</option>
-                                    <option>June</option>
-                                    <option>July</option>
-                                    <option>August</option>
-                                    <option>September</option>
-                                    <option>October</option>
-                                    <option>November</option>
-                                    <option>December</option>
-                                </select>
-
-                                <select id="year">
-                                    <option>2023</option>
-                                    <option>2024</option>
-                                    <option>2025</option>
-                                    <option>2026</option>
-                                    <option>2027</option>
-                                </select>
-                                <br> or further notice
-                            </h5>
                         </div>
-
-                        <br>
 
                     </ul>
 
-
                     <button type="submit" class="submit"><strong>Submit Details</strong></button>
-
-                    <script>
-                        document.getElementById('myForm').addEventListener('submit', function (event) {
-                            event.preventDefault();
-                            alert("Submission Successful!");
-                            this.reset();
-                        });
-                    </script>
 
                 </form>
 
