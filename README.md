@@ -1,4 +1,5 @@
 # RM1-Campaign-Website
+by Shaza binti Shamsul 2218714 
 
 For JavaScript interaction, I implemented clicking the submit button after filling the form, which will create a pop-up saying that the submission is successful. Then the form will clear automatically.
 
